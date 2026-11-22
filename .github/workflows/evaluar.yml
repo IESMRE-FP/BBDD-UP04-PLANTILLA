@@ -11,10 +11,11 @@ jobs:
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
-      - name: Configurar Python
+
+      - name: Preparar Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: "3.12"
       - name: Instalar pytest
         run: python -m pip install pytest
       - name: Verificar estructura de entregas (NO evalúa SQL)
