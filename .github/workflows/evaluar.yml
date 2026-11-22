@@ -1,13 +1,30 @@
-name: UP04 - Comprobaciones preliminares
+name: Evaluación SQL - UP04
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
+
 jobs:
-  comprobar-estructura:
+  evaluar-402:
     runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -uroot -proot"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -16,7 +33,22 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - name: Instalar pytest
-        run: python -m pip install pytest
-      - name: Verificar estructura de entregas (NO evalúa SQL)
-        run: python -m pytest tests/ -v
+
+      - name: Instalar dependencias
+        run: pip install mysql-connector-python pytest
+
+      - name: Importar SQL del alumno
+        env:
+          MYSQL_PWD: root
+        run: |
+          ARCHIVO=$(find actividad402 -maxdepth 1 -name '402_*.sql' | head -n 1)
+          test -n "$ARCHIVO"
+          mysql -h 127.0.0.1 -u root < "$ARCHIVO"
+
+      - name: Ejecutar pruebas
+        env:
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_USER: root
+          MYSQL_PASSWORD: root
+          MYSQL_PORT: 3306
+        run: pytest tests/test_402_real.py -v
