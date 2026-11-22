@@ -1,0 +1,4 @@
+-- Actividad 404
+-- Nombre y apellidos: COMPLETAR
+-- Sustituye el nombre del archivo por 404_TusNombreApellidos.sql
+-- Escribe aquí las instrucciones SQL de tu actividad.

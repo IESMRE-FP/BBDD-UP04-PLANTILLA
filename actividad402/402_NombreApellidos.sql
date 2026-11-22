@@ -1,0 +1,4 @@
+-- Actividad 402
+-- Nombre y apellidos: COMPLETAR
+-- Sustituye el nombre del archivo por 402_TusNombreApellidos.sql
+-- Escribe aquí las instrucciones SQL de tu actividad.
