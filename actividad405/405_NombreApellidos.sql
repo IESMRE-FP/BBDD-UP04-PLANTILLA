@@ -1,4 +1,2 @@
--- Actividad 405
--- Nombre y apellidos: COMPLETAR
--- Sustituye el nombre del archivo por 405_TusNombreApellidos.sql
--- Escribe aquí las instrucciones SQL de tu actividad.
+-- Actividad 405. Sustituye NombreApellidos por tu nombre.
+-- Escribe aquí tu solución SQL.

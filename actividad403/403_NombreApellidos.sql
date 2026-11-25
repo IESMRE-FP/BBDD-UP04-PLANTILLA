@@ -1,4 +1,2 @@
--- Actividad 403
--- Nombre y apellidos: COMPLETAR
--- Sustituye el nombre del archivo por 403_TusNombreApellidos.sql
--- Escribe aquí las instrucciones SQL de tu actividad.
+-- Actividad 403. Sustituye NombreApellidos por tu nombre.
+-- Escribe aquí tu solución SQL.

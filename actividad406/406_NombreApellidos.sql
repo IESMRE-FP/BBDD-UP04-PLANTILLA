@@ -1,4 +1,2 @@
--- Actividad 406
--- Nombre y apellidos: COMPLETAR
--- Sustituye el nombre del archivo por 406_TusNombreApellidos.sql
--- Escribe aquí las instrucciones SQL de tu actividad.
+-- Actividad 406. Sustituye NombreApellidos por tu nombre.
+-- Escribe aquí tu solución SQL.

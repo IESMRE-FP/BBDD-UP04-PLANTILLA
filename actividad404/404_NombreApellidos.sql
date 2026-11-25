@@ -1,4 +1,19 @@
--- Actividad 404
--- Nombre y apellidos: COMPLETAR
--- Sustituye el nombre del archivo por 404_TusNombreApellidos.sql
--- Escribe aquí las instrucciones SQL de tu actividad.
+-- Actividad 404 - DCL
+-- Organiza tu entrega por fases y usuarios.
+-- @fase 1
+-- @usuario root
+
+-- @usuario tengopermisos
+
+-- @usuario root
+
+-- @fase 2
+-- @usuario creartablas
+
+-- @usuario root
+
+-- @fase 3
+-- @usuario root
+
+-- @fase 4
+-- @usuario root

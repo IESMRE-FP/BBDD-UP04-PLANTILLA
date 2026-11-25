@@ -1,17 +1,9 @@
-# UP04 — Diseño físico y DCL (BBDD 1.º DAW)
+# UP04 · Entrega SQL (402–406)
 
-Plantilla para Classroom 50. Contiene actividades 402–406.
+Repositorio de preparación para GitHub Classroom. **No contiene correctores ni soluciones**.
 
-## Entrega
+En cada carpeta `actividadNNN`, renombra `NNN_NombreApellidos.sql` y escribe tu solución. Haz commit y push a `main`.
 
-En cada carpeta `actividadNNN/`, renombra el archivo `NNN_NombreApellidos.sql` con tus datos y añade las instrucciones SQL. Haz commit y push a `main`.
+Para 404, utiliza los comentarios `-- @fase N` y `-- @usuario nombre` para marcar quién ejecuta cada bloque. La fase 1 incluye las concesiones iniciales; en la fase 2 se crea `futbol.estadios` y se conceden los permisos por columna; la fase 3 revoca `user1`; la fase 4 revoca `ALTER` de `creartablas`.
 
-**La actividad 404 se entrega en SQL** (no en PDF). Identifica con comentarios qué usuario debe ejecutar cada bloque. No ejecutes operaciones DCL en un servidor compartido.
-
-## Validación actual
-
-El workflow ejecuta **comprobaciones preliminares de estructura de entregas**, NO corrige todavía el contenido SQL ni asigna notas. Un check verde NO significa que la actividad esté bien resuelta.
-
-## Referencias
-
-Los enunciados completos, los diagramas y los criterios RA2 están publicados en los materiales docentes de la UP04. Los diagramas no se incluyen aquí y son necesarios para completar 402, 403, 405 y 406.
+**Todavía no se ha instalado la evaluación automática**. Hasta que se configure el servicio de corrección privado, los push no producirán calificaciones.
